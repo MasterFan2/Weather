@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_menu"
+        android:visibility="gone"
+        />
+    <com.masterfan.weather.widget.MaterialRippleLayout
+        android:id="@+id/m_title_right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        app:rippleAlpha="0.2"
+        app:rippleColor="#585858"
+        app:rippleDelayClick="false"
+        app:rippleHover="true"
+        app:rippleOverlay="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_local"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+        </com.masterfan.weather.widget.MaterialRippleLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:id="@+id/home_title_district"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="渝中区"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:text="11月4号 星期三"
+            />
+    </LinearLayout>
+</RelativeLayout>
